@@ -1,0 +1,151 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Direct</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="media/LK.png" type="image/png">
+</head>
+<body>
+
+            <!-- Welcome to card -->
+    <div class="entry-overlay" id="entryOverlay">
+        <div class="entry-message">𝓒𝓵𝓲𝓬𝓴 𝓗𝓮𝓻𝓮</div>
+    </div>
+
+            <!-- Background video -->
+    <div class="background">
+        <video autoplay muted loop id="bg-video">
+            <source src="media/Background.mp4" type="video/mp4">
+        </video>
+    </div>
+
+        <!-- owner badge -->
+    <div class="profile-card">
+        <div class="owner-badge">
+            <img src="media/crown2.png" alt="Owner badge">
+        <div class="tooltip">Active Developer</div>
+    </div>
+
+            <!-- Card -->
+    <div class="avatar-container">
+        <img class="avatar" src="media/p2.jpg" alt="Brofayl avatar ">
+    </div>
+          <!-- Nickname -->
+        <h1 class="glowing-text">
+        ディ.ック
+        <img class="sparkles" src="media/sparks.gif" alt="">
+        </h1>
+           <!-- Bio -->
+        <p class="tagline">Nothing Ventured Nothing Gained</p>
+        <!-- location -->
+    <style>
+        .notification {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #28a745;
+            color: #ffffff;
+            padding: 12px 20px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(40, 167, 69, 0.5);
+            opacity: 0;
+            transform: translateY(-20px);
+            transition: opacity 0.4s ease, transform 0.4s ease;
+            z-index: 1000;
+        }
+
+        .notification.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .marquee-container {
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            background: #00;
+            padding: 1px 0;
+            position: relative;
+        }
+
+        .marquee-text {
+            display: inline-block;
+            padding-left: 100%;
+            font-weight: bold;
+            color: #f7f7f7;
+            font-size: 23px;
+            animation: marquee 15s linear infinite;
+        }
+
+        @keyframes marquee {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+
+        .content-container {
+            margin-top: 50px;
+        }
+
+        textarea {
+            resize: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="marquee-container">
+        <span class="marquee-text">
+            <img src="run.gif" style="width: 30px; height: 25px;">
+            𝑨𝒏𝒅𝒂 𝑺𝒖𝒅𝒂𝒉 𝑫𝒊 𝑨𝒍𝒊𝒉𝒌𝒂𝒏 𝑲𝒆 𝑯𝒂𝒍𝒂𝒎𝒂𝒏 𝑳𝒂𝒏𝒅𝒊𝒏𝒈 𝑷𝒂𝒈𝒆 𝑰𝒏𝒅𝒐𝒏𝒆𝒔𝒊𝒂 !!!        </span>
+    </div>
+                 <!-- social media -->
+    <div class="social-links">
+        <a href="#" " class="social-icon">
+            <img src="media/spotify.png" alt="Spotify">
+        </a>
+        <a href="#" " class="social-icon">
+            <img src="media/instagram.png" alt="Instagram">
+        </a>
+        <a href="#" " class="social-icon">
+            <img src="media/github.png" alt="GitHub">
+        </a>
+        <a href="#" " class="social-icon">
+            <img src="media/kofi.png" alt="Ko-fi">
+        </a>
+        <a href="#" " class="social-icon">
+            <img src="media/paypal.png" alt="PayPal">
+        </a>
+    </div>
+
+        <!-- copyright hhhh -->
+        <div class="views">
+            © 2025 PUKIMAK - Learn To Be Better
+        </div>
+    </div>
+    
+          <!-- volume controller-->
+    <div class="volume-slider-container">
+        <div class="volume-slider-track">
+          <div class="volume-slider-progress" id="volumeProgress"></div>
+
+          <div class="volume-slider-handle" id="volumeHandle"></div>
+    </div>
+        <span class="volume-percent" id="volumePercent">100%</span>
+    </div>
+          <!-- volume loaction-->
+    <audio id="bg-audio" loop volume="1.0">
+        <source src="media/sound.mp3" type="audio/mpeg">
+    </audio>
+
+     <img src="image.jpg" draggable="false">
+
+        <!-- java script -->
+    <script src="script.js"></script>
+
+</body>
+</html>
